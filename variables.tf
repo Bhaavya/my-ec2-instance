@@ -14,6 +14,7 @@ variable "instance_type" {
 }
 
 variable "ami_id" {
-  description = "AMI ID to launch the instance from"
+  description = "Optional AMI ID override. If empty, the latest Amazon Linux 2023 AMI is fetched from SSM."
   type        = string
+  default     = ""
 }
